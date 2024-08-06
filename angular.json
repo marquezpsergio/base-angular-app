@@ -6,7 +6,7 @@
   },
   "newProjectRoot": "projects",
   "projects": {
-    "task_management_front": {
+    "base-angular18-app": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -21,7 +21,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/task_management_front",
+            "outputPath": "dist/base-angular18-app",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [],
@@ -72,10 +72,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "task_management_front:build:production"
+              "buildTarget": "base-angular18-app:build:production"
             },
             "development": {
-              "buildTarget": "task_management_front:build:development"
+              "buildTarget": "base-angular18-app:build:development"
             }
           },
           "defaultConfiguration": "development"
